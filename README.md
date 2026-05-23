@@ -34,7 +34,7 @@ The inverter shown above has certain electrical characteristics. To understand i
 
 <img width="808" height="582" alt="image" src="https://github.com/user-attachments/assets/c45af49c-15c7-4608-baa1-e767506be15a" />
 
-- Why do we need SPICE?
+**Why do we need SPICE?**</br>
 SPICE (Simulation Program with Integrated Circuit Emphasis) is a very important tool in circuit design. It is used to analyze and predict the behavior of electronic circuits before actual fabrication.</br>
 
 Modern design techniques such as clock tree synthesis, timing analysis, and crosstalk evaluation are all based on SPICE simulations. Without SPICE, it would not be possible to calculate delays, and without delay information, physical design and timing verification would not be meaningful.</br>
