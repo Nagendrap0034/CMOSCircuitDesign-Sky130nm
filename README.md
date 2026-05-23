@@ -1,4 +1,4 @@
-# CMOSCircuitDesign-Sky130nm
+# CMOS Circuit Design Spice Simulation - Sky130nm
 Ngspice simulation using sky130 technology
 # Workshop Overview
 This workshop follows a progressive learning path:
