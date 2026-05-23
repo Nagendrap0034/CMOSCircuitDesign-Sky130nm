@@ -25,8 +25,8 @@ This workshop follows a structured learning:
 2) Static behaviour evaluation-CMOS inverter robustness-Device variation - Sources of variation - Etching process, Oxide Thickness, Smart SPICE simulation for device variations, Conclusion, Sky130 device variations labs
    
 # Introduction to Circuit Design and SPICE Simulations
--- L1: Why do we need SPICE simulations?
-In CMOS circuit design, PMOS and NMOS transistors are connected together to form logic gates such as NAND, NOR, AND, OR, etc. These basic gates are the building blocks of all digital circuits.
+## L1: Why do we need SPICE simulations?
+- In CMOS circuit design, PMOS and NMOS transistors are connected together to form logic gates such as NAND, NOR, AND, OR, etc. These basic gates are the building blocks of all digital circuits.
 
 
 
