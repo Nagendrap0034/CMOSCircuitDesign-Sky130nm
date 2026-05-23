@@ -24,7 +24,9 @@ This workshop follows a structured learning:
 1) Static behaviour evaluation-CMOS inverter robustness-Power supply variation - Smart SPICE simulations for power supply variations, Advantages and disadvantages using low supply voltage, Sky130 Supply variation Labs
 2) Static behaviour evaluation-CMOS inverter robustness-Device variation - Sources of variation - Etching process, Oxide Thickness, Smart SPICE simulation for device variations, Conclusion, Sky130 device variations labs
    
-
+# Introduction to Circuit Design and SPICE Simulations
+-- L1: Why do we need SPICE simulations?
+In CMOS circuit design, PMOS and NMOS transistors are connected together to form logic gates such as NAND, NOR, AND, OR, etc. These basic gates are the building blocks of all digital circuits.
 
 
 
