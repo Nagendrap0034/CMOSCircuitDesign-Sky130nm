@@ -29,14 +29,17 @@ This workshop follows a structured learning:
 - In CMOS circuit design, PMOS and NMOS transistors are connected together to form logic gates such as NAND, NOR, AND, OR, etc. These basic gates are the building blocks of all digital circuits.
 
 <img width="498" height="501" alt="image" src="https://github.com/user-attachments/assets/0f1df6c3-cd81-41d3-98c3-70f95b2b0062" />
+
 The inverter shown above has certain electrical characteristics. To understand its behavior, we perform SPICE simulations. These simulations help us analyze important parameters such as delay, switching behavior, and performance. Based on these results, we can determine the proper W/L (Width/Length) ratio of the transistors.
+
 <img width="808" height="582" alt="image" src="https://github.com/user-attachments/assets/c45af49c-15c7-4608-baa1-e767506be15a" />
+
 - Why do we need SPICE?
-SPICE (Simulation Program with Integrated Circuit Emphasis) is a very important tool in circuit design. It is used to analyze and predict the behavior of electronic circuits before actual fabrication.
+-SPICE (Simulation Program with Integrated Circuit Emphasis) is a very important tool in circuit design. It is used to analyze and predict the behavior of electronic circuits before actual fabrication.
 
-Modern design techniques such as clock tree synthesis, timing analysis, and crosstalk evaluation are all based on SPICE simulations. Without SPICE, it would not be possible to calculate delays, and without delay information, physical design and timing verification would not be meaningful.
+#Modern design techniques such as clock tree synthesis, timing analysis, and crosstalk evaluation are all based on SPICE simulations. Without SPICE, it would not be possible to calculate delays, and without delay information, physical design and timing verification would not be meaningful.
 
-For example, consider a clock distribution network where buffers are connected with different capacitive loads.
+##For example, consider a clock distribution network where buffers are connected with different capacitive loads.
 
   
 
