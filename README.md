@@ -10,5 +10,34 @@ This workshop follows a structured learning:
 3) Introduction to SPICE - Basic SPICE setup, Circuit description in SPICE syntax, Define Technology parameters, First SPICE simulation, SPICE lab with Sky130 models
 
 # Day 2: Velocity saturation and basics of CMOS inverter VTC
+1) SPICE simulation for lower nodes and velocity saturation effect - SPICE simulation for lower nodes, Drain current vs gate voltage for long and short channel device, Velocity saturation at lower and higher electric fields, Velocity saturation drain current model, Labs Sky130 Id-Vgs, Labs Sky130 Vt
+2) CMOS voltage transfer characteristics (VTC) - MOSFET as a switch, Introduction to standard MOS voltage current parameters, PMOS/NMOS drain current vs drain voltage, Step1- Convert PMOS gate-source-voltage to Vin, Step2 & Step3- Convert PMOS and NMOS drain-source-voltage to Vout, Step4- Merge PMOS-NMOS load curves and plot VTC
+
+# Day 3: CMOS switching threshold and dynamic simulations
+1) Voltage transfer characteristics-SPICE simulations - SPICE deck creation for CMOS inverter, SPICE simulation for CMOS inverter, Labs Sky130 SPICE simulation for CMOS
+2) Static behaviour evaluation-CMOS inverter robustness-Switching Threshold - Switching Threshold, Vm, Analytical expression of Vm as a function of (W/L)n and (W/L)p, Analytical expression of (W/L)n and (W/L)p as a function of Vm, Static and Dynamic simulation of CMOS inverter, Static and Dynamic simulation of CMOS inverter with increased PMOS width, Applications of CMOS inverter in clock network and STA
+
+# Day 4: CMOS Noise Margin robustness evaluation  
+1) Static behaviour evaluation-CMOS inverter robustness-Noise Margin - Introduction to Noise Margin, Noise Margin voltage parameters, Noise margin equation and summary, Noise margin variation with respect to PMOS width, Sky130 Noise margin labs
+
+# Day 5: CMOS power supply and device variation robustness evaluation  
+1) Static behaviour evaluation-CMOS inverter robustness-Power supply variation - Smart SPICE simulations for power supply variations, Advantages and disadvantages using low supply voltage, Sky130 Supply variation Labs
+2) Static behaviour evaluation-CMOS inverter robustness-Device variation - Sources of variation - Etching process, Oxide Thickness, Smart SPICE simulation for device variations, Conclusion, Sky130 device variations labs
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
