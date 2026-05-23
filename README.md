@@ -28,6 +28,9 @@ This workshop follows a structured learning:
 ## L1: Why do we need SPICE simulations?
 - In CMOS circuit design, PMOS and NMOS transistors are connected together to form logic gates such as NAND, NOR, AND, OR, etc. These basic gates are the building blocks of all digital circuits.
 
+<img width="498" height="501" alt="image" src="https://github.com/user-attachments/assets/0f1df6c3-cd81-41d3-98c3-70f95b2b0062" />
+  
+
 
 
 
