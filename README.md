@@ -901,9 +901,14 @@ We see that the width of PMOS is quite large than that of NMOS. SO it is clearly
 <img width="1919" height="1079" alt="Screenshot 2025-10-03 232247" src="https://github.com/user-attachments/assets/841f9eea-395a-4213-93c5-8e5a06de59f0" />
 
 ### Tools used
-1. NGspice </br>
-2. Sky130 PDK </br>
-3. Virtual box machine/ UBUNTU Environment </br>
+1. NGspice - It is an open source electronic circuit simulation software based on SPICE </br>
+You create a circuit netlist or schematic -> run simulation -> inspect otput waveforms and performances </br>
+
+2. Sky130 PDK - It is an open source semiconductor (Process Design Kit) released by Skywater technology </br>
+You create Schematic -> Simulation(NGspice) -> Layout -> Verification -> Fabrication(Tapeout) </br>
+
+4. Oracle VM Virtual Box - It is virtualization software used to run multiple operating systems on a single computer </br>
+Windows laptop -> VirtualBox -> Ubuntu VM -> Install SKY130 + NGspice tools
 
 
 
