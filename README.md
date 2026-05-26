@@ -186,25 +186,21 @@ Now when the channel starts to disappear, is termed as "Pinch off region"</br>
 
 <img width="1492" height="602" alt="image" src="https://github.com/user-attachments/assets/40146460-641e-4f89-a950-acebeba103e3" />
 
-When Vgs-Vds<Vt, we will not see any channel present at drain side.</br>
+When Vgs-Vds<Vt, we will not see any channel present at drain side. This condition is called "Saturation region".</br>
 
 <img width="1310" height="582" alt="image" src="https://github.com/user-attachments/assets/e62baac0-53e1-4c61-a9d6-e26a0a4b8ec1" />
-
-This condition is termed as "Saturation region", when the mosfet is saturated and cannot do anything further.</br>
 
 <img width="391" height="102" alt="image" src="https://github.com/user-attachments/assets/4c0aca6a-e230-47d1-9e30-9416785487be" />
 
 ### L6 Drain current model for saturation region of operation
 In saturation region, the channel voltage will remain constant as 'Vgs-Vt', and the drain current will not depend on Vds.</br>
-To get drain current equation in saturation region we will replace Vds as Vgs-Vt.</br>
+To get drain current equation in saturation region, replace Vds as Vgs-Vt.</br>
 
 <img width="467" height="360" alt="image" src="https://github.com/user-attachments/assets/3df0adef-9616-499c-97de-477da403178b" />
 
-We can now see that according to the equation, the mosfet acts as perfect current source. But this is not true, when we increase Vds we will that Depletion region at drain increases and so channel length further reduces.Therefore, we see a slight dependency of Vds over Id</br>
+Here MOSFET acts as perfect current source. But this is not true, when Vds in increased, Depletion region at drain increases and so channel length further reduces.Therefore, a slight dependency of Vds over Id. This is called "Channel Length Modulation".</br>
 
 <img width="1476" height="586" alt="image" src="https://github.com/user-attachments/assets/899bf2cb-f752-43ad-8750-5fc9d6b62f50" />
-
-This is called "Channel Length Modulation".</br>
 
 <img width="876" height="168" alt="image" src="https://github.com/user-attachments/assets/b3d388c1-7074-49c9-a019-7d0ff212271f" />
 
@@ -215,44 +211,39 @@ First let us look into the SPICE setup.</br>
 
 <img width="1412" height="611" alt="image" src="https://github.com/user-attachments/assets/5872cd9a-70d1-46cf-9fe4-f5247f8d3415" />
 
-Some parameters are constant, and directly coming from the foundaries we don't have to derive them. These are circiled in yellow.</br>
+Some parameters are constant, and directly coming from the foundaries we don't have to derive them. These are highlighted in yellow.</br>
 
 <img width="1313" height="591" alt="image" src="https://github.com/user-attachments/assets/c7f8c503-a596-40a7-85e8-b00b1eef4cf9" />
 
 <img width="922" height="536" alt="image" src="https://github.com/user-attachments/assets/260175cb-7abc-4fc6-a332-6b73b7954cae" />
 
-So, when we feed the SPICE model parameters and SPICE netlist intp the SPICE software, we get the device characteristics in terms of Id vs Vds with different values of Vgs.</br>
+Feed the SPICE model parameters and SPICE netlist into the SPICE software, we get the device characteristics in terms of Id vs Vds with different values of Vgs.</br>
 
 **SPICE Netlist**
-We need to feed the device into SPICE engine in certain manner, the circuit equivalent of given mosfet is as shown below. </br>
+Feed the device into SPICE engine in certain manner, the circuit equivalent of given MOSFET is as shown below. </br>
 
 <img width="1262" height="585" alt="image" src="https://github.com/user-attachments/assets/ec870ea4-f7ce-4e99-939a-d6e8646c499e" />
 
 ### L2 Circuit description in SPICE syntax
-Now we will write the syntax for this particular circuit in SPICE netlist. To do that we need to follow some steps-
-* **Define Nodes**
-  
-  <img width="653" height="410" alt="image" src="https://github.com/user-attachments/assets/726a94e6-1333-41dc-a4c0-d9c766b00f9b" />
+Write the syntax for this particular circuit in SPICE netlist. To do that, follow some steps: </br>
+Define Nodes</br>
+Give names to the node</br>
+Write the code (Since the MOSFET has 4 terminals, it is lying between 4 different nodes, similarly resistor is lying b/w 2 nodes)</br>
+Four terminals are "Drain", "Gate", "Source", and "Substrate" (DGSB).</br>
 
-* **Give names to the node**
-* **Write the code**
-  `since modfet has 4 terminals, it is lying between 4 different nodes, similarly resistor is lying between 2 nodes.`
-
+<img width="653" height="410" alt="image" src="https://github.com/user-attachments/assets/726a94e6-1333-41dc-a4c0-d9c766b00f9b" />
 <img width="1307" height="418" alt="image" src="https://github.com/user-attachments/assets/fe360627-afb9-41d7-917d-95b7ac8ca6b7" />
 <img width="1211" height="371" alt="image" src="https://github.com/user-attachments/assets/5d8f624b-296a-499a-9cc2-c9fd0946fb52" />
 <img width="1213" height="412" alt="image" src="https://github.com/user-attachments/assets/c7d30d08-94c4-4891-95b3-4fc8c95fa3c9" />
 <img width="1132" height="381" alt="image" src="https://github.com/user-attachments/assets/b9dad3c6-2cc6-48a5-9409-a7eb90f39301" />
 <img width="1197" height="385" alt="image" src="https://github.com/user-attachments/assets/e091f59b-d7b8-4913-9ee3-0a2cc5d324f0" />
-
-The fashion in which it is written is "Drain", "Gate", "Source", and "Substrate" (DGSS).</br>
-
 <img width="1252" height="471" alt="image" src="https://github.com/user-attachments/assets/f9599207-d326-4da5-b92b-53d80a85c4cb" />
 <img width="1172" height="406" alt="image" src="https://github.com/user-attachments/assets/15ce1ea6-b8d3-47f6-9ef9-978ddd83bbc6" />
 <img width="1242" height="402" alt="image" src="https://github.com/user-attachments/assets/36660836-b886-4c2e-9649-d13863d65f7f" />
 
-this is a long channel mosfet.
+This represents a long channel MOSFET.
 
-Similarly we can write for Resistor.</br>
+Similarly SPICE syntax for the Resistor is:</br>
 <img width="1263" height="416" alt="image" src="https://github.com/user-attachments/assets/880832b5-5f1b-49f3-9c01-25ef9bdc55c4" />
 <img width="1247" height="463" alt="image" src="https://github.com/user-attachments/assets/1d36164e-cf12-49e3-84b5-8f2928f4a8b9" />
 <img width="1345" height="370" alt="image" src="https://github.com/user-attachments/assets/fb1e6449-cf20-48d7-9888-eadc40c5319c" />
@@ -260,11 +251,11 @@ Similarly we can write for Resistor.</br>
 <img width="637" height="308" alt="image" src="https://github.com/user-attachments/assets/6498b3c6-8eda-40ee-adf7-c9a6e332675f" />
 
 ### L3 Define Technology parameters
-Now we will look for model of this particular NMOS. For this we have model paramters, and it becomes easy to model from the parameters. That is where the technology file comes into picture. The models for the name NMOs will be found in file which has the attribute of the similar name.</br>
+Let us model this particular NMOS. For this we have model parameters, and it becomes easy to model from the parameters. That is where the technology file comes into picture. The models for the name NMOS will be found in file which has the attribute of the similar name.</br>
 
 <img width="1312" height="592" alt="image" src="https://github.com/user-attachments/assets/4fa6b7c5-61d6-45f7-ba68-ad15a67426eb" />
 
-Inside the brackets, technology paramteters will exist. Similarly for pmos also.</br>
+Inside the brackets, technology paramteters will exist, similarly PMOS also.</br>
 
 <img width="542" height="107" alt="image" src="https://github.com/user-attachments/assets/cbef3e32-99d7-4998-9957-e89c4ba96c57" />
 
@@ -276,12 +267,15 @@ Now, we just plug in this packaged file in `.mod` file and call this file in top
 <img width="635" height="257" alt="image" src="https://github.com/user-attachments/assets/163cf011-37b0-450d-b7d4-4a915bc70653" />
 
 In the above image, the highlighted part is comment in SPICE.</br>
-Now, we need to sweep the Vgs and Vds for SPICE simulations.</br>
+Now, sweep the Vgs and Vds for SPICE simulations.</br>
 
 ### L4 First SPICE simulation
-* Open Virtual box
-* Type `cd`
-* `git clone https://github.com/kunalg123/sky130CircuitDesignWorkshop.git`
+1. Open Virtual box</br>
+2. Open the terminal and Type `cd` </br>
+3. Clone the below repository: </br>
+https://github.com/kunalg123/sky130CircuitDesignWorkshop.git </br>
+Take the reference git : https://github.com/vsdip/vsd-cmos/  </br>
+  
   <img width="1918" height="1078" alt="image" src="https://github.com/user-attachments/assets/414d1bb8-13a1-4726-92cb-06ea15ed382f" />
 
   inside the `sky130_fd_pr` directory we will see cells, models and tech files.</br>
