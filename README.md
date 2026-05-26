@@ -276,106 +276,109 @@ Now, sweep the Vgs and Vds for SPICE simulations.</br>
 https://github.com/kunalg123/sky130CircuitDesignWorkshop.git </br>
 Take the reference git : https://github.com/vsdip/vsd-cmos/  </br>
   
-  <img width="1918" height="1078" alt="image" src="https://github.com/user-attachments/assets/414d1bb8-13a1-4726-92cb-06ea15ed382f" />
+<img width="1918" height="1078" alt="image" src="https://github.com/user-attachments/assets/414d1bb8-13a1-4726-92cb-06ea15ed382f" />
 
-  inside the `sky130_fd_pr` directory we will see cells, models and tech files.</br>
+Inside the `sky130_fd_pr` directory cells, models and tech files will be present.</br>
 
-  <img width="1918" height="1078" alt="image" src="https://github.com/user-attachments/assets/be98370e-7126-4eb4-959d-ce8d40133e9a" />
+<img width="1918" height="1078" alt="image" src="https://github.com/user-attachments/assets/be98370e-7126-4eb4-959d-ce8d40133e9a" />
 
-  Inside the `cells` files we will see `nfet` and `pfet` cells, these cells we will be using.</br>
+Inside the `cells` files, `nfet` and `pfet` cells are present.</br>
 
-  Inside `nfet` we will see spice libraries at different corners, we will select one such typical corner.</br>
-  <img width="1918" height="1078" alt="image" src="https://github.com/user-attachments/assets/99aa0891-e80e-4457-8799-a4972c8a1f39" />
+  Inside `nfet` there will be spice libraries at different corners.</br>
+<img width="1918" height="1078" alt="image" src="https://github.com/user-attachments/assets/99aa0891-e80e-4457-8799-a4972c8a1f39" />
 
-  <img width="1918" height="1072" alt="image" src="https://github.com/user-attachments/assets/e4a24ba3-c6ab-4f42-8398-8bb9265b79d6" />
+<img width="1918" height="1072" alt="image" src="https://github.com/user-attachments/assets/e4a24ba3-c6ab-4f42-8398-8bb9265b79d6" />
 
-  We will see all the model paramteres required for the process.</br>
-  <img width="1918" height="1078" alt="image" src="https://github.com/user-attachments/assets/25186faa-ca04-43c7-9c2e-e3d99862ef41" />
+<img width="1918" height="1078" alt="image" src="https://github.com/user-attachments/assets/25186faa-ca04-43c7-9c2e-e3d99862ef41" />
 
-  <img width="1918" height="1078" alt="image" src="https://github.com/user-attachments/assets/baa1c253-f071-4bd2-b701-68fedb5be846" />
+<img width="1918" height="1078" alt="image" src="https://github.com/user-attachments/assets/baa1c253-f071-4bd2-b701-68fedb5be846" />
 
-  We have different W and L values which pre-described. For simulation we need to take any one value which is present inside the library.</br>
+There are different W and L values which pre-described. For simulation, take any one value which is present inside the library.</br>
 
-  <img width="1918" height="1078" alt="image" src="https://github.com/user-attachments/assets/e980ebe5-c4f7-4b29-99ad-a7a6867db0d4" />
+<img width="1918" height="1078" alt="image" src="https://github.com/user-attachments/assets/e980ebe5-c4f7-4b29-99ad-a7a6867db0d4" />
 
-  Now go inside `models` --> `lib.spice` file. We will see library files which are present for nfet and pfet. The corner files are present, include Typical, slow-fast and fast-fast corner files.</br>
+Now go inside `models` --> `lib.spice` file. There are library files which are present for nfet and pfet. The corner files are present, include Typical, slow-fast and fast-fast corner files.</br>
 
-  <img width="1918" height="1078" alt="image" src="https://github.com/user-attachments/assets/22dd75fb-31d6-4196-8fae-f5897bdc9000" />
-  <img width="1918" height="1078" alt="image" src="https://github.com/user-attachments/assets/190a2e1b-bf47-4505-9034-47e3424e0087" />
+<img width="1918" height="1078" alt="image" src="https://github.com/user-attachments/assets/22dd75fb-31d6-4196-8fae-f5897bdc9000" />
+<img width="1918" height="1078" alt="image" src="https://github.com/user-attachments/assets/190a2e1b-bf47-4505-9034-47e3424e0087" />
 
 Inside `design` --> open day1 file.</br>
 
 <img width="1918" height="1078" alt="image" src="https://github.com/user-attachments/assets/e6eabf93-da6c-478a-8ba2-37d440e2b048" />
 <img width="1918" height="1078" alt="image" src="https://github.com/user-attachments/assets/67dcf536-1896-4202-a378-ec81ec3a717b" />
+
 Above we see Vdd varying from 0 to 1.8 volts with step size of 0.1V and Vgs sweeping from 0 to 1.8V and with step size of 0.2V
 
-Let us do the spice simulations:
 <img width="1918" height="1078" alt="image" src="https://github.com/user-attachments/assets/51cf629c-17ad-4daa-b627-62abf3cc65c7" />
 
 <img width="1918" height="1078" alt="image" src="https://github.com/user-attachments/assets/820c2138-e28f-4c1a-a3a1-d54669e4576a" />
 
 <img width="1918" height="1078" alt="image" src="https://github.com/user-attachments/assets/6142f189-20cb-4bba-8918-ed8b1ec64f83" />
 
-We will get the plot of Id vs Vds at different Vgs values.</br>
+Plot of Id vs Vds at different Vgs values.</br>
 
 <img width="1918" height="1078" alt="image" src="https://github.com/user-attachments/assets/cb0bccce-ff20-4727-8062-962df8aa8017" />
-
-To check the value of Id for corresponding Vds and Vgs, just left click and see.</br>
 
 <img width="308" height="155" alt="image" src="https://github.com/user-attachments/assets/264c0ac3-955c-49b3-86f3-447e93e8e452" />
 
 ### L5 SPICE lab with Sky130 models
-If we go inside `models` folder, we will see `all.spice` file. If we open it we will see the scale of Width and Length.</br>
+If we go inside `models` folder, there will be `all.spice` file. Open to see the scale of Width and Length. W and L values are in micrometers.</br>
+
+### Obervations
+--> NMOS device physics, linear and saturation regions, drain current equations, SPICE simulations, V-I characteristics </br>
+
 <img width="1918" height="1078" alt="image" src="https://github.com/user-attachments/assets/0f6dfb1f-7668-466a-8ba7-c9ac5beacb77" />
 
-We can see that W and L values are in microns.</br>
-
-# NgspiceSky130-Day2-Velocity saturation and basics of CMOS inverter VTC
+# Day2-Velocity saturation and basics of CMOS inverter VTC
 
 ## SPICE simulation for lower nodes and velocity saturation effect
 
 ### L1 SPICE simulation for lower nodes
-We have seen the curve for Id vs Vds, for different values of Vgs.</br>
+We have observed the curve for Id vs Vds, for different values of Vgs.</br>
 
 <img width="1297" height="658" alt="image" src="https://github.com/user-attachments/assets/c10158ab-7588-4862-96a0-19125d4a3e25" />
 
-In the above graph the area left of curve; Vds=Vgs-Vt is Linear region as current is increasing linearly, the area right is Saturation region with slight increase in current due to velocity saturation and below is the Cut off region.Also this case is when the channel length is large.</br>
+In the above graph:</br>
+Left side of the curve: Linear region[Vds=Vgs-Vt]</br>
+Right side of the curve: Saturation region</br>
+Bottom of the curve: Cut off region</br>
 
-Now we are taking different W and L, but the ration of W/L is same as previous, so the Id should not change. But this is not the case practically.</br>
-Below is the spice deck, where only the values of W and L is changed, rest everything remains same.</br>
+This behavior is for long channel devices. Take different values of W and L, but the ration of W/L is same as previous, so the Id should not change. But it is not practical case.</br>
+Below is the spice deck, where only the values of W and L is changed.</br>
 
 <img width="872" height="442" alt="image" src="https://github.com/user-attachments/assets/09eec98c-92a0-409e-a6c5-5b2a18e8289d" />
 
 ### L2 Drain current vs gate voltage for long and short channel device
-Let us compare the two simulations we did.
+Let us compare the two simulations.</br>
 
 <img width="1385" height="547" alt="image" src="https://github.com/user-attachments/assets/0dd21cb8-3868-4074-909f-accde3fa2556" />
 
-**There are some Observations:**
-* **Observation 1**- If we see Id values for different Vgs and for Vds=2.5V, there is a quadratic dependency of Id on Vgs. Whereas for short channel device, at Vds=2.5V, the current is increasing linearly due to velocity saturation.</br>
+Observations :</br>
+1. For long channel devices(Vds=2.5V), Id shows quadratic behavior with Vgs.</br>
+2. For short channel devices, Id shows linear behavior due to velocity saturation.</br>
 
 <img width="1385" height="547" alt="image" src="https://github.com/user-attachments/assets/3eb690d9-a38c-4c97-a9b2-2b0b5148ff63" />
 <img width="747" height="540" alt="image" src="https://github.com/user-attachments/assets/7f388d3d-9e7c-45ad-b70b-65a1d846f961" />
 
-Now we will plot graph of Id vs Vgs and sweeping Vds or keeping Vds constant = 2.5V.</br>
+Now plot graph of Id vs Vgs, set Vds to 2.5V</br>
 
 <img width="855" height="442" alt="image" src="https://github.com/user-attachments/assets/658d2ba4-4e01-4e20-9a01-e949f3f88cb9" />
 
-The syntax explains that what will be there on left hand side will be sweeped at every value on right hand side. For example here for every value of Vdd, Vin will be sweeped. The plot we get is quadratic, it is only when Vds=2.5V </br>
+The syntax explains that what will be there on LHS will be sweeped at every value on RHS. For instance here for every value of Vdd, Vin will be sweeped. The plot we get is quadratic, it is only when Vds=2.5V </br>
 
 <img width="776" height="641" alt="image" src="https://github.com/user-attachments/assets/fd8321e8-6235-4c84-aa42-411747b0f599" />
 
-Let us see the same effect for short channel device. For L=0.25 micron.
+Let us observe the same effect for short channel device. For L=0.25 micrometer.
 <img width="1332" height="592" alt="image" src="https://github.com/user-attachments/assets/ffba63a2-5ce1-42c5-a7f0-0f61fe194d12" />
 
 ### L3 Velocity saturation at lower and higher electric fields
-For short channel we will see more of a linear behaviour as the Vgs increases. This is due to velocity saturation effect.</br>
+For short channel devices, Id vs Vgs becomes more linear due to velocity saturation.</br>
 
 <img width="1332" height="592" alt="image" src="https://github.com/user-attachments/assets/95aa490e-3dc0-4875-b74a-836c1ae07486" />
-So, for lower node we will have 4 regions of operations: **Cut Off, Linear, Saturation and Velocity Saturation**
+So, for lower node there are 4 regions of operations: **Cut Off, Linear, Saturation and Velocity Saturation**
 
 **Velocity Saturation**
-We know velocity and electric field are related to each other with equation `v=uE`, where v is velocity, E is electric field and u is mobility. Velocity increases linearly with electric field over certain electric field value after which it gets saturated. This is due to scattering at higher fields and mobility decreases. </br>
+Velocity and electric field are related to each other with equation `v=uE`, where v is velocity, E is electric field and u is mobility. Velocity increases linearly with electric field over certain electric field value after which it gets saturated. This is due to scattering at higher fields and mobility decreases. </br>
 
 <img width="973" height="506" alt="image" src="https://github.com/user-attachments/assets/57f60dd0-b579-4e67-962d-03c21c430e49" />
 
@@ -388,6 +391,7 @@ Velocity saturation happens for higher gate-source voltages.</br>
 
 Let us take Vgs-Vt=Vgt because we will be taking Vgs as large values. Current equation we will be using as shown above, For lower values of Vds we will neglect the 'lambda' term.</br>
 There is one more technology paramter which is "Vdsat", it is the velocity of gate when the device just enters the Velocity saturation region.</br>
+
 <img width="831" height="212" alt="image" src="https://github.com/user-attachments/assets/2e70d7d1-4891-4488-90e8-93f9b5f1322c" />
 
 <img width="1026" height="536" alt="image" src="https://github.com/user-attachments/assets/724c8f7e-e772-4006-9f39-05d7a8e06b56" />
@@ -399,24 +403,21 @@ There is one more technology paramter which is "Vdsat", it is the velocity of ga
 <img width="1331" height="583" alt="image" src="https://github.com/user-attachments/assets/5a5755f0-0723-4aea-8f07-e277cf3fdf18" />
 
 In the above equation, it seems when W is constant and L is lowered then Id should increase, But it is not so practically.</br>
-
-* **Observation 2** - The saturation current for lower nodes is low instead of being high. This is because Velocity saturation tends to saturate the device early so the peak current we see for lower nodes is much lesser than for higher nodes.</vr>
+The saturation current for lower nodes is low instead of being high. This is because Velocity saturation tends to saturate the device early so the peak current we see for lower nodes is much lesser than for higher nodes.</vr>
 <img width="1370" height="576" alt="image" src="https://github.com/user-attachments/assets/82010154-16a3-4079-a57c-e5a7435b9507" />
 
 ### L5 Labs Sky130 Id-Vgs
-We will now do simulation for lower nodes. Inside day2 design file.</br>
+Simulate for lower nodes. Inside day2 design file.</br>
 
 <img width="1918" height="1078" alt="image" src="https://github.com/user-attachments/assets/2e30ad35-dbfe-42e4-a2c6-1c3e3ffd3d8b" />
-
 <img width="1915" height="1078" alt="image" src="https://github.com/user-attachments/assets/46853bc0-6ac5-4d4e-8c34-133b54530564" />
 
 We can see above, simulation is being done for L=0.15u and W=0.39u.</br>
 <img width="1918" height="1078" alt="image" src="https://github.com/user-attachments/assets/0112c1fb-efa5-4eb2-a5c2-9c34923067ab" />
 <img width="1917" height="1078" alt="image" src="https://github.com/user-attachments/assets/05b5bf4a-79e4-4b9e-b92d-938707164205" />
-
 <img width="1918" height="1078" alt="image" src="https://github.com/user-attachments/assets/3455d86b-dd2b-4b41-aad6-4bee2f683440" />
 
-The above plot is Id vs Vds for different values of Vgs. We can see for lower values of Vgs it is showing quadratic behaviour and for higher values of Vgs it is showing Linear behaviour. Now if want to see the peak current for Vgs=1.8V, just 'press' left click on mouse at Vgs=1.8V.</br>
+The above plot is Id vs Vds for different values of Vgs. We can see for lower values of Vgs it is showing quadratic behaviour and for higher values of Vgs it is showing Linear behaviour. Now if we want to see the peak current for Vgs=1.8V, just 'press' left click on mouse at Vgs=1.8V.</br>
 
 <img width="290" height="22" alt="image" src="https://github.com/user-attachments/assets/83d91519-32f9-4d17-b88a-379635529e9a" />
 So we can see it is approximately 198uA.</br>
@@ -428,30 +429,28 @@ Here again we are taking values for L=0.15u and W=0.39u, Keeping Vds constant at
 
 <img width="1918" height="1078" alt="image" src="https://github.com/user-attachments/assets/2c4fd12f-4995-43bc-b1bd-faaa1d6291a7" />
 <img width="1918" height="1078" alt="image" src="https://github.com/user-attachments/assets/17f7032a-f654-4c22-81e9-acbc1cbe368f" />
-
 <img width="1918" height="1078" alt="image" src="https://github.com/user-attachments/assets/b490e2f2-76aa-49f1-b37c-e986cb3e4126" />
+
 In the above graph we can see that, due to short channel effect we are seeing a linear behaviour for higher Vgs and Vds being constant.</br>
 
 ### L6 Labs Sky130 Vt
-Now we will calculate Threshold Voltage Vt for Id vs Vgs curve.
+Calculate Threshold Voltage Vt for Id vs Vgs curve.
 
 <img width="1918" height="1078" alt="image" src="https://github.com/user-attachments/assets/1e4b97da-884d-4447-b8ae-4d83ff1aef33" />
 
-In the curve we can see that Vt is the value when current increases drastically for small change in Vgs. To calculate we will draw tangent on the curve and see where it touches.</br>
+In the curve we can see that Vt is the value when current increases drastically for small change in Vgs. To calculate we will draw tangent on the curve and see where it touches.It comes at around 0.76V</br>
 
 <img width="292" height="30" alt="image" src="https://github.com/user-attachments/assets/dfd6b8ca-308f-425e-97d0-58cb1799fca4" />
-
-It comes at around 0.76V.
 
 ## CMOS voltage transfer characteristics (VTC)
 
 ### L1 MOSFET as a switch
-We will now look at the device parameters from the switch point of view.</br>
+Let us oberve the device parameters from switch point of view.</br>
 
 <img width="907" height="508" alt="image" src="https://github.com/user-attachments/assets/6bb70912-c36e-4031-bf01-7e05871b28a8" />
 The above shows MOSFET as a switch:
-* When |Vgs|<Vt, device is OFF and it acts as open switch
-* When |Vgs|>Vt, device is ON and it acts as closed switch
+* When |Vgs|<Vt, device is OFF, acts as open switch
+* When |Vgs|>Vt, device is ON, acts as closed switch
 
 <img width="1220" height="685" alt="image" src="https://github.com/user-attachments/assets/48869cbb-daee-4a3b-96a8-bdd0fb45a79f" />
 
@@ -464,15 +463,15 @@ We are trying to get the equivalent circuit of CMOS when Vin is 'high' and 'low'
 * When we take Vin as 'low' or equal to '0', PMOS will be ON and NMOS will be OFF.
 <img width="1347" height="696" alt="image" src="https://github.com/user-attachments/assets/c15bdbc8-99af-48e0-a23c-726e7e415b66" />
 
-So we can see that when Vin=Vdd there is a direct path that exists between Vss and Vout, the capacitor CL discharges through the resistor.</br>
+When Vin=Vdd there is a direct path that exists between Vss and Vout, the capacitor CL discharges through the resistor.</br>
 Similarly when Vin=0 there is a direct path between Vdd and Vout, CL charges.</br>
 <img width="1322" height="428" alt="image" src="https://github.com/user-attachments/assets/a4f22e15-1c9a-44cf-bfa2-e27b37557439" />
 
-Let us give the naming convention of the CMOS 
+Let us provide the naming convention of the CMOS 
 
 <img width="506" height="618" alt="image" src="https://github.com/user-attachments/assets/7225993f-5a53-4456-9959-3cdf52d77960" />
 
-ALso the current in both the condition is Idsn(drain to source for NMOS) and Idsp(Drain to source for PMOS)
+ALso the current in both the condition is Ids_n(drain to source for NMOS) and Ids_p(Drain to source for PMOS)
 And **Idsp = -Idsn**, both are opposite in direction to each other.
 
 ### L3 PMOS/NMOS drain current vs drain voltage
@@ -491,38 +490,38 @@ We have seen various internal voltages, but actually in terms of user's perspect
   <img width="372" height="237" alt="image" src="https://github.com/user-attachments/assets/081d616c-e17f-4741-8a96-0d5eae2b2b9a" />
   
 * We know that Vgsp= Vin-Vdd, So we get the above values.So we get Vin = Vgsp+Vdd, we are trying to convert all the voltages as function of Vin and Vout.
-* We will try to plot the graph of PMOS in terms of Idsn, the plot will be as shown below. We can see that the corresponding Vin value of Vgsp is being plotted as shown in the above table.
+* Try to plot the graph of PMOS in terms of Ids_n, the plot will be as shown below. We can see that the corresponding Vin value of Vgs_p is being plotted as shown in the above table.
 
   <img width="871" height="443" alt="image" src="https://github.com/user-attachments/assets/cd415d3f-042b-460e-8314-4bb28d50d663" />
 
 ### L5 Step2 & Step3- Convert PMOS and NMOS drain-source-voltage to Vout
-Now we be converting the Vdsp and function of output voltage Vin. We know **Vdsp = Vout-Vdd**.</br>
-Let us convert Vdsp into Vout. So to get Vout there is a shift of Vdd towards left hand side.</br>
+Convert the Vds_p and function of output voltage Vin. We know **Vds_p = Vout-Vdd**.</br>
+Let us convert Vds_p to Vout. So to get Vout there is a shift of Vdd towards LHS.</br>
 
 <img width="1333" height="391" alt="image" src="https://github.com/user-attachments/assets/c9709e57-c876-4521-9ff6-88fb68f9927c" />
 
-We can see that whenever Vout=2V that means Vdsp=0V and Vdd=2V (given), then The current is zero and capacitor at the output is discharged. This is true only when PMOS is in combination with NMOS and forms a CMOS inverter.</br>
-Let us take another example, when Vout=0V, that means -Vdsp=2V and Vdd=2V, so at every gate voltage of Vin we will see a finite current whenever Vout=0V. As Vout=0V, the capacitor is completely discharged and we need to charge that, so that is the charging current required. So, here we get the load curve for PMOS</br>
+We observe that whenever Vout=2V that means Vds_p=0V and Vdd=2V (given), then the current is zero and capacitor at the output is discharged. This is true only when PMOS is in combination with NMOS and forms a CMOS inverter.</br>
+Let us take another instance, when Vout=0V, that means -Vds_p=2V and Vdd=2V, so at every gate voltage of Vin we will see a finite current whenever Vout=0V. As Vout=0V, the capacitor is completely discharged and we need to charge that, so that is the charging current required. So, here we get the load curve for PMOS</br>
 
 <img width="513" height="392" alt="image" src="https://github.com/user-attachments/assets/3a31512c-bd15-4f84-8a43-cb125285ad24" />
 
-Now we will try to get the "load curve" for NMOS transistor from this equations.</br>
+Now try to get the "load curve" for NMOS transistor from this equations.</br>
 <img width="223" height="75" alt="image" src="https://github.com/user-attachments/assets/ede06e12-72e7-4da9-8341-820177ed7b4e" />
 
-It is actually simple as Vgsn = Vin and Vdsn = Vout, directly we can get the graphs.</br>
+It is actually simple as Vgs_n = Vin and Vds_n = Vout, directly we can get the graphs.</br>
 
 <img width="410" height="287" alt="image" src="https://github.com/user-attachments/assets/e434b1a5-c734-43c2-9565-19714e01f38e" />
 <img width="892" height="380" alt="image" src="https://github.com/user-attachments/assets/143a185e-09e5-4c51-8964-eae5b983c47c" />
 
 ### L6 Step4- Merge PMOS-NMOS load curves and plot VTC
-We will now merge the above two curves and obtain the voltage transfer characteristics(VTC) for CMOS inverter.
+Merge the above two curves and obtain the voltage transfer characteristics(VTC) for CMOS inverter.
 
 <img width="1340" height="412" alt="image" src="https://github.com/user-attachments/assets/e06060aa-bb37-4abc-a225-7cce4569c224" />
-For this we will superimpose both the Load Curves to get the VTC. We are doing this to find out the common point between Vin and Vout of both NMOS and PMOS.</br>
+For this superimpose both the Load Curves to get the VTC. We are doing this to find out the common point between Vin and Vout of both NMOS and PMOS.</br>
 
 <img width="573" height="361" alt="image" src="https://github.com/user-attachments/assets/60499256-909d-4fad-ba5b-5a5e58d4939d" />
 
-So the  range of Vin and Vout is 0V-2V.</br>
+So the range of Vin and Vout is 0V to 2V.</br>
 
 * When Vin = 0V, Vout = 2V; NMOS is Cut Off and PMOS is in Linear region
 * When Vin = 0.5V, 1.5V<Vout<2V; NMOS is in Saturation region and PMOS is in Linear region.
@@ -532,20 +531,20 @@ So the  range of Vin and Vout is 0V-2V.</br>
 
 <img width="1332" height="687" alt="image" src="https://github.com/user-attachments/assets/e484815f-7533-4c87-a6c3-ca79158ac59e" />
 
-# NgspiceSky130-Day3-CMOS switching threshold and dynamic simulations
+# Day3-CMOS switching threshold and dynamic simulations
 
 ## Voltage transfer characteristics-SPICE simulations
 
 ### L1 SPICE deck creation for CMOS inverter
-We will now simulate the VTC. For that we need to **create the SPICE deck**. It is a connectivity information (Netlist). As there is information about substrate, the circuit is as shown below.Here M1 is PMOS and M2 is NMOS</br>
+Now simulate the VTC. For that we need to **create the SPICE deck**. It is a connectivity information (Netlist). As there is information about substrate, the circuit is as shown below. Here M1 is PMOS and M2 is NMOS.</br>
 
 <img width="546" height="501" alt="image" src="https://github.com/user-attachments/assets/87648d3d-9f23-4e6a-b66a-872306e570f1" />
 
-Next we will write down the **Component Vlaues**, keeping W/L for both NMOS and PMOS same.</br>
+Next write down the **Component Vlaues**, keeping W/L for both NMOS and PMOS same.</br>
 
 <img width="622" height="487" alt="image" src="https://github.com/user-attachments/assets/01bb49d8-39b6-40e1-850f-6a6a95dc5946" />
 
-Next we will assume the **Vin and Vout values**
+Next assume the **Vin and Vout values**
 
 <img width="585" height="482" alt="image" src="https://github.com/user-attachments/assets/38af526d-c53a-4ff7-91c5-bd804fd572da" />
 
@@ -557,10 +556,10 @@ Next step is to **Identify the Nodes** (Node is the point where two components m
 
 <img width="592" height="482" alt="image" src="https://github.com/user-attachments/assets/683acee0-3468-498a-9f94-c804122c5a4b" />
 
-Now let us write the SPICE deck:
+Now write the SPICE deck:
 
 <img width="1227" height="585" alt="image" src="https://github.com/user-attachments/assets/1b54b47c-edea-4a16-ac0d-fe40405cd393" />
-We know for Mosfet the syntax is DGSS(Drain gate source and substrate).
+MOSFET syntax is DGSS(Drain gate source substrate).
 
 ### L2 SPICE simulation for CMOS inverter
 <img width="1197" height="582" alt="image" src="https://github.com/user-attachments/assets/6d58c77a-50fe-4eab-9891-287d7a98ae44" />
@@ -568,26 +567,27 @@ We know for Mosfet the syntax is DGSS(Drain gate source and substrate).
 <img width="1280" height="592" alt="image" src="https://github.com/user-attachments/assets/f4e7acd7-6158-432b-8003-b2c74656f9b0" />
 
 Next comes the **Simulation Commands**</br>
-Here we will be sweeping the gate input voltage from 0 to 2.5V with steps of 0.05. We need to find the VTC, for this only we will be sweeping the input voltage and measuring the output voltage.</br>
-Final step is to describe the **Model files**, all the information about the technological parameteres is given inside the model files.</br>
+Here sweep the gate input voltage from 0 to 2.5V with steps of 0.05. To find the VTC, sweep the input voltage and measure the output voltage.</br>
+Final step is to describe the **Model files**, all the details about the technological parameteres is given inside the model files.</br>
 
 <img width="1223" height="565" alt="image" src="https://github.com/user-attachments/assets/1bd6f151-618b-4612-82fd-6b43f7eec459" />
 
-Now we will do the SPICE simulation for Wn=Wp=0.375u, Ln=Lp=0.25u, Wn/ln=Wp/Lp=1.5. Below is the VTC we get for the above netlist.</br>
+Now do the SPICE simulation for Wn=Wp=0.375u, Ln=Lp=0.25u, Wn/ln=Wp/Lp=1.5</br>
 
 <img width="743" height="567" alt="image" src="https://github.com/user-attachments/assets/91c4ab55-57f1-45ab-826b-b9a9631647ee" />
 
-Next we will get the VTC for Wn= 0.375u, Wp= 0.9375u, Ln,p=0.25u; Wn/Ln=1.5, Wp/Lp=2.5  (PMOS width is 2.5 times more than NMOS)
+Next get the VTC for Wn= 0.375u, Wp= 0.9375u, Ln,p=0.25u; Wn/Ln=1.5, Wp/Lp=2.5  (PMOS width is 2.5 times more than NMOS)
 
 <img width="741" height="572" alt="image" src="https://github.com/user-attachments/assets/5d83f191-3962-4e25-99b3-aa5d3f520d92" />
 
-If we observe the previous graph is left shifted slightly. This happens because NMOS is more stronger than PMOS in previous graph.</br>
+Observe the previous graph is left shifted slightly. This happens because NMOS is more stronger than PMOS in previous graph.</br>
 
 ### L3 Labs Sky130 SPICE simulation for CMOS
-We now get the VTC characteristics
+Now VTC characteristics are obtained.
 
 <img width="1918" height="1078" alt="image" src="https://github.com/user-attachments/assets/3e6c8b58-05e8-4c43-94a8-e1f8323a9e00" />
-We are using both pfet and nfet for CMOS inverter. We can see that W/L ratio of pmos is 2.33 times greater than that of nmos. And we will be sweeping Vin from 0 to 1.8V with step isze of 0.01V and plotting the Vout.</br>
+
+We are using both pfet and nfet for CMOS inverter. We see that W/L ratio of pmos is 2.33 times greater than that of nmos. Sweep Vin from 0 to 1.8V with step size of 0.01V and plot the Vout.</br>
 
 <img width="1913" height="1078" alt="image" src="https://github.com/user-attachments/assets/a9aa02e7-a3f0-4485-9b07-129fd8260d03" />
 To get the plot type `ngspice` and `plot out vs in`.
@@ -596,26 +596,22 @@ To get the plot type `ngspice` and `plot out vs in`.
 
 <img width="1918" height="1078" alt="image" src="https://github.com/user-attachments/assets/e71074c8-50af-44c1-9316-790007b9394e" />
 
-Now we need to know the Switching Threshold from this graph, it is the point when Vin=Vout.</br>
-To zoom in the curve; press righ mouse button + hold it.</br>
+Now get the Switching Threshold from this graph, it is the point when Vin=Vout.So switching threshold for W/L=2.3 is around 0.876V </br>
 
 <img width="1918" height="1076" alt="image" src="https://github.com/user-attachments/assets/f23c8b99-6ef4-49e3-860b-2e0c324f4320" />
 So switching threshold for W/L=2.3 is around 0.876V</br>
 
 <img width="280" height="30" alt="image" src="https://github.com/user-attachments/assets/816fa465-de21-4d8d-bff4-fb79ab059723" />
 
-We will now see the transient analysis:</br>
-For that we will go inside the tansient SPICE file for day3</br>
-
 <img width="1918" height="1078" alt="image" src="https://github.com/user-attachments/assets/fe3e84fa-8511-4f02-917e-570de93216d9" />
-We can see that it is for typical corner as before and the W/L is also same. But now we taking transient pulse from 0v to 1V with shift of 0 with rise time and fall time being 0.1ns and 0.1ns respectively, pulse width of 2ns and total time period of 4ns. Let us run this.</br>
 
 <img width="1918" height="1078" alt="image" src="https://github.com/user-attachments/assets/93a365ad-7eff-4172-921b-d0301c2978f7" />
+
 <img width="1918" height="1078" alt="image" src="https://github.com/user-attachments/assets/786bea0f-e506-4475-b099-575545bd0685" />
 
-So for rise delay and fall delay, we need to consider 50% of output curve i.e. at 0.9V; out-in.</br>
 <img width="305" height="67" alt="image" src="https://github.com/user-attachments/assets/9e8f888e-74a1-465c-8cb5-71ee3302b0f7" />
 
+Transient analysis shows how output changes with time. So for rise delay and fall delay, we need to consider 50% of output curve i.e. at 0.9V; out-in.</br>
 Therefore **Rise delay = 2.482ns-2.15ns = 0.333ns**
 
 For fall delay, consider while falling.</br>
@@ -627,55 +623,56 @@ Therefore **Fall Delay = 4.334ns-4.050ns = 0.285ns**
 ## Static behaviour evaluation-CMOS inverter robustness-Switching Threshold
 
 ### L1 Switching Threshold, Vm
-Let us compare the two different CMOS inverters with different W/L ratios of PMOS and NMOS, we can see that the shape of the VTC is same in both the cases only the switching threshold is different. This shows the robustnesss of CMOS inverter.</br>
+Let us compare the two different CMOS inverters with different W/L ratios of PMOS and NMOS, we see that the shape of the VTC is same in both the cases only the switching threshold is different. This shows the robustnesss of CMOS inverter.</br>
 
 <img width="1243" height="578" alt="image" src="https://github.com/user-attachments/assets/c246dc3c-6686-4d8f-b8a5-74136a9323de" />
-Let us find out the Switching threshold, Vm in both the cases by drawing a 45 degree line.</br>
+Let us find the Switching threshold, Vm in both the cases by drawing a 45 degree line.</br>
 
 So, in first case Vm comes out to be somewhere around 0.9V and in second case Vm=1.2V.</br>
 <img width="1168" height="417" alt="image" src="https://github.com/user-attachments/assets/7b300b9a-c5ee-4a11-ab44-6bc6027f8b63" />
 
-This is the area where PMOS and NMOS both are in saturation region. Current flows from both the transistor, it is actually a dangerous situation.
+This is the area where PMOS and NMOS both are in saturation region. Maximum Current flows from both the transistor. This region consumes power and is critical in design.
 
 <img width="1083" height="462" alt="image" src="https://github.com/user-attachments/assets/5b52f85c-c43e-4b4f-b38f-e51e8fe28170" />
 
 ### L2 Analytical expression of Vm as a function of (W/L)n and (W/L)p
-We will now calculate the value of Vm w.r.t the NMOS and PMOS width and length. </br>
+Calculate the value of Vm with the NMOS and PMOS width and length. </br>
 <img width="553" height="367" alt="image" src="https://github.com/user-attachments/assets/6c11d77c-26a3-46e5-bf6c-349740e6eb00" />
 <img width="860" height="53" alt="image" src="https://github.com/user-attachments/assets/b8533cc5-176d-4cb7-97c3-7d6ad5f4ec88" />
 <img width="557" height="148" alt="image" src="https://github.com/user-attachments/assets/aacac08b-2543-4f88-8ddb-ce58cad2b763" />
 
 ### L3 Analytical expression of (W/L)n and (W/L)p as a function of Vm
-Now here we will calculate the value of W/L for PMOS and NMOS when Vm is given.</br>
-We have to move in reverse fashion, as we need to calculate W/L ratio of PMOS and NMOS such that Switching threshold is exatly half of the power supply Vdd = 2.5V, therefore required Vm = 1.25V.</br>
-We will start from the current equation itself i.e. **Idsn = -Idsp**
+Calculate the value of W/L for PMOS and NMOS when Vm is given.</br>
+We have to move in reverse fashion, as we need to calculate W/L ratio of PMOS and NMOS such that Switching threshold is exactly half of the power supply Vdd = 2.5V, therefore required Vm = 1.25V.</br>
+
+We will start from the current equation itself i.e. **Ids_n = -Ids_p**
 
 <img width="962" height="362" alt="image" src="https://github.com/user-attachments/assets/4abd767b-176b-42c2-9e2e-bdf52323fed2" />
 Expanding Kp and Kn (Gain factor) </br>
 <img width="517" height="92" alt="image" src="https://github.com/user-attachments/assets/950f6372-d1d7-4c18-8cfd-5b1f35cdfce5" />
 <img width="517" height="92" alt="image" src="https://github.com/user-attachments/assets/a532b030-2296-4ff8-981d-2ab29cd88dea" />
 
-Now here on the RHS all are constants and we will get the values from the model files except Vm, If we know Vm then we can get the W/L ratios.</br>
-So now this will allow us to find out for what value of W/L ratio of PMOS will be greater than NMOS based on values of Vm.</br>
-We will now see the behaviour of CMOS for below difference in W/L ratios of PMOS and NMOS.</br>
+Now here on the RHS all are constants and will get the values from the model files except Vm, If we know Vm then we can get the W/L ratios.</br>
+This will allow us to find out for what value of W/L ratio of PMOS will be greater than NMOS based on values of Vm.</br>
+The behaviour of CMOS for below difference in W/L ratios of PMOS and NMOS is observed.</br>
 
 <img width="301" height="233" alt="image" src="https://github.com/user-attachments/assets/8534791b-2793-4986-bdad-4a2ef6bde1fe" />
 
 ### L4 Static and Dynamic simulation of CMOS inverter
 * For (W/L)n = (W/L)p = 1.5</br>
-  <img width="750" height="567" alt="image" src="https://github.com/user-attachments/assets/1c8f3e81-2023-429d-9a9e-b80e35d3ad09" />
+<img width="750" height="567" alt="image" src="https://github.com/user-attachments/assets/1c8f3e81-2023-429d-9a9e-b80e35d3ad09" />
 
-  We can also calculate the "Rise Delay" and "Fall Delay" by using the transient analysis, just like we did earlier.</br>
-  <img width="1256" height="512" alt="image" src="https://github.com/user-attachments/assets/836bb013-63a3-44aa-b0d5-d640359c35f7" />
+We can also calculate the "Rise Delay" and "Fall Delay" by using the transient analysis, just like we did earlier.</br>
+<img width="1256" height="512" alt="image" src="https://github.com/user-attachments/assets/836bb013-63a3-44aa-b0d5-d640359c35f7" />
 
 ### L5 Static and Dynamic simulation of CMOS inverter with increased PMOS width
 We will be doing the SPICE simulations for increased width of PMOS transistors and compare the results.</br>
 * (W/L)p = 2(W/L)n</br>
-  <img width="1181" height="507" alt="image" src="https://github.com/user-attachments/assets/7333b09a-2e41-40b2-881e-373214b16c5b" />
+<img width="1181" height="507" alt="image" src="https://github.com/user-attachments/assets/7333b09a-2e41-40b2-881e-373214b16c5b" />
 
 We can see that the Vm is now increased as the PMOS has become more stronger and it needs more current to charge the output load capacitor.</br>
 * (W/L)p = 3(W/L)n</br>
-  <img width="1197" height="507" alt="image" src="https://github.com/user-attachments/assets/f3bea4a2-8853-4330-8886-86e6ab224069" />
+<img width="1197" height="507" alt="image" src="https://github.com/user-attachments/assets/f3bea4a2-8853-4330-8886-86e6ab224069" />
 
 <img width="1241" height="512" alt="image" src="https://github.com/user-attachments/assets/abf77cdf-93df-45b2-8373-b9d526a1c8e6" />
 <img width="1207" height="512" alt="image" src="https://github.com/user-attachments/assets/978a4960-3442-4ba5-bd1b-e8f336f8812a" />
@@ -687,31 +684,31 @@ The final data set we got from above experiment is shown below:
 
 <img width="692" height="236" alt="image" src="https://github.com/user-attachments/assets/0359ac26-996d-423d-bd27-99e08b6dddaa" />
 
-There are some conclusions we draw from this experiment: </br>
+There are some conclusions that are drawn from this experiment: </br>
 * During fabrication, there can be slight variation in sizes of PMOS and NMOS from the required one, but the robustness of CMOS inverter is such that, there is not much difference in the Vm with change in sizes.
 * When (W/L)p = 2(W/L)n, we see that RISE-FALL delay are approximately equal, if we simulate then we can get the ratio factor such that the Rise delay and fall delay are equal to each other. This shows "Symmetry" of CMOS inverter.
   
-  *This is a typical characteristic of Clock Inverter/buffer where we want the rise delay and fall delay to be equal.* </br>
-  <img width="1110" height="653" alt="image" src="https://github.com/user-attachments/assets/30d33241-5e2f-4389-9a80-cd8d2ad5baaf" />
+*This is a typical characteristics of Clock Inverter/buffer where we want the rise delay and fall delay to be equal.* </br>
+<img width="1110" height="653" alt="image" src="https://github.com/user-attachments/assets/30d33241-5e2f-4389-9a80-cd8d2ad5baaf" />
 * Other types of cells can be used according to the data path requirement
 
-# NgspiceSky130-Day4-CMOS Noise Margin robustness evaluation
+# Day4-CMOS Noise Margin robustness evaluation
 
 ## Static behaviour evaluation-CMOS inverter robustness-Noise Margin
 
 ### L1 Introduction to Noise Margin
-Now we will learn CMOS inverter's robustness towards the Noise Margin. Also we see the Noise margin evaluation for CMOS inverter. </br>
+Now get the knowledge of CMOS inverter's robustness towards the Noise Margin. Also see the Noise margin evaluation for CMOS inverter. </br>
 **Noise Margin**: It is a measure of how much unwanted electrical noise a logic circuit can tolerate on its input without producing an incorrect output. </br>
 
-For example if we consider an ideal Inverter, for inputs 0/1 it gives output as 1/0. The slope of switch is infinite. </br>
+For instance, consider an ideal Inverter, for inputs 0/1 it gives output as 1/0. The slope of switch is infinite. </br>
 
 <img width="557" height="451" alt="image" src="https://github.com/user-attachments/assets/2465a4e2-199d-4698-aa7d-58f0b42f0c6f" />
 
-But practically the slope won't be infinite, due to presence of resistances and capacitances there will be delay. Therefore we will get a finite slope </br>
+But practically the slope won't be infinite, due to presence of resistances and capacitances there will be delay. Therefore a finite slope is observed. </br>
 
 <img width="368" height="316" alt="image" src="https://github.com/user-attachments/assets/f8f2f3f3-dc21-45eb-90b7-c9f2fdb8ef94" />
 
-We will now see that whenever the input is between 0 to VIL(input low voltage); the output will be VOH(output high). </br>
+Whenever the input is between 0 to VIL(input low voltage); the output will be VOH(output high). </br>
 And whenever the input is between VIH(input high voltage) and Vdd; output will be VOL(output low voltage). </br>
 <img width="405" height="342" alt="image" src="https://github.com/user-attachments/assets/8e3c22bf-b012-4a75-a08d-910511ed2980" />
 
@@ -723,7 +720,7 @@ Also, the slope is approximately -1, as for increase in input, output is reducin
 <img width="356" height="337" alt="image" src="https://github.com/user-attachments/assets/d848d4c0-de9b-4b6b-8c6a-f3006bae557c" />
 
 ### L3 Noise margin equation and summary
-Now we will calculate the noise margin equation, for that we will plot the voltages on the same scale.</br>
+Calculate the noise margin equation, for that plot the voltages on the same scale.</br>
 
 <img width="733" height="443" alt="image" src="https://github.com/user-attachments/assets/c25a3266-d8f3-4e16-8afa-298756b3a59d" />
 In the above scale: </br>
@@ -737,8 +734,8 @@ So, any value which lies in between noise margins is considered either 1/0 and c
 <img width="822" height="481" alt="image" src="https://github.com/user-attachments/assets/6443e129-644a-4d0d-a4c4-0439ba4165de" />
 
 ### L4 Noise margin variation with respect to PMOS width
-We will evaluate the noise margin depending upon the PMOS width and ultimately prove that how CMOS inverter is robust to the noise margins.</br>
-First, we will find the points where the slope = -1 and extend the lines towards x-y axis.</br>
+Evaluate the noise margin depending upon the PMOS width and ultimately prove that how CMOS inverter is robust to the noise margins.</br>
+Find the points where the slope = -1 and extend the lines towards x-y axis.</br>
 
 <img width="1207" height="542" alt="image" src="https://github.com/user-attachments/assets/5ab8cb26-4ab7-4e77-9a04-be82cfcdac12" />
 The larger the Noise margin, stronger is CMOS inverter and immune to Noises.</br>
@@ -747,24 +744,19 @@ The larger the Noise margin, stronger is CMOS inverter and immune to Noises.</br
 <img width="1197" height="503" alt="image" src="https://github.com/user-attachments/assets/89b5f850-df64-4e6e-abcb-366cc3755d13" />
 <img width="1203" height="517" alt="image" src="https://github.com/user-attachments/assets/13199ec4-704c-4812-aba2-38257330e40b" />
 
-For (W/L)p=4(W/L)p and (W/L)p=5(W/L)p noise margins are same, so even if we increase the widths further noise margin will be static. 
+For (W/L)p=4(W/L)p and (W/L)p=5(W/L)p noise margins are same, so even if we increase the widths further noise margin will be static. Verify the robustness of CMOS inverter, get to know the ranges for digital and analog design. </br>
 
 <img width="677" height="226" alt="image" src="https://github.com/user-attachments/assets/fca7bcac-471c-4114-8c64-4b97cba1f5b0" />
-
-Here also we can verify the robustness of CMOS inverter. </br>
-
-Also we come to know the ranges for "Digital design" and "Analog design" in the CMOS inverter.</br>
-
 <img width="741" height="546" alt="image" src="https://github.com/user-attachments/assets/3e9a0cf6-a232-4ff2-ad4c-214b03803af3" />
 <img width="772" height="542" alt="image" src="https://github.com/user-attachments/assets/56c5c94d-b59f-456c-ba92-b22fab03b6d9" />
 
 ### L5 Sky130 Noise margin labs
-We will now plot Noise margins
+Plot the Noise margins
 
 <img width="1918" height="1078" alt="image" src="https://github.com/user-attachments/assets/af440785-3266-41ad-97ed-dd819824aaa5" />
 <img width="1918" height="1077" alt="image" src="https://github.com/user-attachments/assets/58aba228-174c-453c-90df-e81aeab49d53" />
 
-We are taking the W/L ratios of PMOS to NMOS as 2.77 and sweeping the Vin from 0 to 1.8V with stepsize of 0.01V.
+Take the W/L ratios of PMOS to NMOS as 2.77 and sweeping the Vin from 0 to 1.8V with stepsize of 0.01V.
 
 <img width="1918" height="1078" alt="image" src="https://github.com/user-attachments/assets/7e8e9139-43f7-4aa7-9737-9e7e378d443b" />
 <img width="1918" height="1078" alt="image" src="https://github.com/user-attachments/assets/bc470f7d-f493-47c5-89e9-dfbad4e053bb" />
@@ -775,26 +767,26 @@ We will take the point where the slope is -1 ; x axis will give VIL and VIH, whe
 **Noise margin NH = VOH - VIH = 1.70952-0.98778 = 0.72** </br>
 **Noise margin NL = VIL - VOL = 0.7733-0.09523 = 0.67807** </br>
 
-# NgspiceSky130-Day5-CMOS power supply and device variation robustness evaluation
+# Day5-CMOS power supply and device variation robustness evaluation
 
 ## Static behaviour evaluation-CMOS inverter robustness-Power supply variation
 
 ### L1 Smart SPICE simulations for power supply variations
 While evaluating the robustness of CMOS inverter another factor is **Power Supply Scaling**. On reducing the gate length, the operating power is also reduced. On power scaling the Cmos characteristics should not change.</br>
 
-We will check by simulation, taking two cases.
+Check the simulation by taking two cases
 
 <img width="1172" height="328" alt="image" src="https://github.com/user-attachments/assets/03dcd0b9-4dd3-4762-83b2-9cbb882e7bc3" />
 <img width="723" height="442" alt="image" src="https://github.com/user-attachments/assets/e403056b-c4bb-4b18-a67c-baf5b02842ab" />
 <img width="717" height="436" alt="image" src="https://github.com/user-attachments/assets/f357c6d2-fa02-43bc-bf51-184494cf8858" />
 <img width="421" height="171" alt="image" src="https://github.com/user-attachments/assets/25f4e021-6818-4e30-85d9-cf300b35bd03" />
 
-We will now plot the VTC charactersitics for Vdd= 2.5V, 2V, 1.5V, 1V, 0.5V;
+Plot the VTC charactersitics for Vdd= 2.5V, 2V, 1.5V, 1V, 0.5V;
 
 <img width="742" height="568" alt="image" src="https://github.com/user-attachments/assets/87cf496c-6386-4374-9e92-1a6ef71959c1" />
 
 ### L2 Advantages and disadvantages using low supply voltage
-We will now analyse the curves we got in after the simulation and see what are the advantages and disadvantages using low supply voltage.</br>
+Analyse the curves got in after the simulation and see what are the advantages and disadvantages using low supply voltage.</br>
 The first factor is to check the "Gain" for all the supply voltages. "Gain Factor" is change in the output voltage divided by change in the input voltage.
 
 <img width="968" height="516" alt="image" src="https://github.com/user-attachments/assets/dd11da87-d570-4fe1-9439-bd449e39af6a" />
@@ -814,7 +806,7 @@ There is energy lowering for low supply voltage.
   Due to low supply voltage, the charging and discharging of load capacitor becomes very slow, due to this the Both rise delay and fall delay will increase and lead to a performance impact.
 
 ### L3 Sky130 Supply variation Labs
-We will calculate the supply variation.
+Calculate the supply variation.
 
 <img width="1918" height="1078" alt="image" src="https://github.com/user-attachments/assets/94a3c1ba-3139-4838-b302-2320ce3f643e" />
 <img width="1918" height="1078" alt="image" src="https://github.com/user-attachments/assets/56419121-44bb-4f73-9084-06b1503b6544" />
@@ -839,7 +831,7 @@ We will calculte the Gain: </br>
 ## Static behaviour evaluation-CMOS inverter robustness-Device variation
 
 ### L1 Sources of variation - Etching process
-We will see the sources of variation of VTC characteristics in a CMOS inverter.</br>
+See the sources of variation of VTC characteristics in a CMOS inverter.</br>
 First is **Etching Process** </br>
 If we see a single inverter layout, we will see the length of gate, the width(common area between polysilicon and diffusion). Due to etching process there can be a variation in length and width of CMOS.
 
@@ -874,8 +866,8 @@ We know **Cox=Eox/tox**, therefore change in tox can actually change the drain c
 <img width="1162" height="461" alt="Screenshot 2025-10-03 204044" src="https://github.com/user-attachments/assets/d06ee6da-3467-41cb-8a0e-280b15faae56" />
 
 ### L3 Smart SPICE simulation for device variations
-Now we will be doing the SPICE simulation for device variations, and prove the robustness of CMOS inverter inspite of different extreme conditions.</br>
-We will see the characteristics for Strong PMOS and week NMOS, this means PMOS width is wider and it has least resistance. Also for weak PMOS and strong PMOS, that means the width of NMOS is more than PMOS and it has least resitance.</br>
+Do the SPICE simulation for device variations, and prove the robustness of CMOS inverter inspite of different extreme conditions.</br>
+We see the characteristics for Strong PMOS and week NMOS, this means PMOS width is wider and it has least resistance. Also for weak PMOS and strong PMOS, that means the width of NMOS is more than PMOS and it has least resitance.</br>
 
 <img width="1148" height="339" alt="Screenshot 2025-10-03 224857" src="https://github.com/user-attachments/assets/398d01a6-ffc4-4a10-86a8-3907d3214b69" />
 <img width="594" height="436" alt="Screenshot 2025-10-03 224935" src="https://github.com/user-attachments/assets/41b1f2f6-c4ba-4c71-a8e6-d1fc8e3b4844" />
@@ -884,7 +876,7 @@ We will see the characteristics for Strong PMOS and week NMOS, this means PMOS w
 <img width="753" height="567" alt="Screenshot 2025-10-03 225153" src="https://github.com/user-attachments/assets/33e8fc0e-5220-4dc4-8da9-4c8dd5406e02" />
 
 ### L4 Conclusion
-We will draw some conclusions from the characteristics we got.
+Let us draw some conclusions from the characteristics we got.
 
 <img width="994" height="537" alt="Screenshot 2025-10-03 231012" src="https://github.com/user-attachments/assets/aec473f9-00f5-4028-b122-fa2922affcb3" />
 
@@ -897,17 +889,21 @@ We will draw some conclusions from the characteristics we got.
 <img width="519" height="169" alt="Screenshot 2025-10-03 231046" src="https://github.com/user-attachments/assets/edd63a58-b8bb-462e-84e5-b8c977d4a4d2" />
 
 ### L5 Sky130 device variations labs
-We will now do the SPICE simulations for the device variations</br>
+Do the SPICE simulations for the device variations</br>
 
 <img width="1912" height="1079" alt="Screenshot 2025-10-03 231604" src="https://github.com/user-attachments/assets/5b26708d-6351-4aa8-b2d2-758a174a6f8b" />
 <img width="1919" height="1079" alt="Screenshot 2025-10-03 231715" src="https://github.com/user-attachments/assets/518ac3f8-9460-49ab-943e-e09cc37ca4ac" />
 
-We can see that the width of PMOS is quite large than that of NMOS. SO it is clearly strong PMOS and weak NMOS case. The Vm will be right shifted.</br>
+We see that the width of PMOS is quite large than that of NMOS. SO it is clearly strong PMOS and weak NMOS case. The Vm will be right shifted.</br>
 
 <img width="1919" height="1079" alt="Screenshot 2025-10-03 231914" src="https://github.com/user-attachments/assets/ef15e759-7036-445a-b5b1-53b0df38050a" />
 
 <img width="1919" height="1079" alt="Screenshot 2025-10-03 232247" src="https://github.com/user-attachments/assets/841f9eea-395a-4213-93c5-8e5a06de59f0" />
 
+### Tools used
+1. NGspice </br>
+2. Sky130 PDK </br>
+3. Virtual box machine/ UBUNTU Environment </br>
 
 
 
